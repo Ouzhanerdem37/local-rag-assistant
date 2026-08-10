@@ -7,7 +7,7 @@ Microsoft Foundry Local ile tamamen offline calisan, belge tabanli soru-cevap as
 - [x] Proje iskeleti (main.py)
 - [x] Kod icinden model baglantisi (SDK)
 - [x] Embedding ve vektor arama
-- [ ] SQLite veri katmani
+- [x] SQLite veri katmani
 - [ ] RAG pipeline
 - [ ] Arayuz
 
