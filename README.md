@@ -6,7 +6,7 @@ Microsoft Foundry Local ile tamamen offline calisan, belge tabanli soru-cevap as
 - [x] Foundry Local kurulumu ve ilk model testi
 - [x] Proje iskeleti (main.py)
 - [x] Kod icinden model baglantisi (SDK)
-- [ ] Embedding ve vektor arama
+- [x] Embedding ve vektor arama
 - [ ] SQLite veri katmani
 - [ ] RAG pipeline
 - [ ] Arayuz
