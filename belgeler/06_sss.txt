@@ -1,0 +1,19 @@
+SIKÇA SORULAN SORULAR
+
+Soru: Bot internet olmadan çalışır mı?
+Cevap: Evet. Modeller bir kez indirildikten sonra sistemin tamamı çevrimdışı çalışır. Soru cevaplama sırasında hiçbir veri internete gönderilmez.
+
+Soru: Hangi dil modelleri kullanılıyor?
+Cevap: Sohbet modeli olarak qwen3-4b, embedding modeli olarak qwen3-embedding-0.6b kullanılmaktadır. Küçük qwen2.5-0.5b modeli talimat takibinde yetersiz kaldığı için testler sonucunda daha büyük modele geçilmiştir.
+
+Soru: Bot bilmediği bir soruya ne yapar?
+Cevap: Sistem talimatı gereği, cevabın belgelerde bulunmadığı durumlarda bot bilgi uydurmak yerine bu bilgiye sahip olmadığını söyler.
+
+Soru: Yeni belge nasıl eklenir?
+Cevap: Yeni belge, belgeler klasörüne metin dosyası olarak eklenir ve veri yükleme (ingestion) scripti yeniden çalıştırılır. Script belgeleri parçalara böler, embedding'lerini hesaplar ve veritabanına kaydeder.
+
+Soru: Neden büyük bir bulut modeli yerine yerel model kullanılıyor?
+Cevap: Üç ana neden vardır: gizlilik (belgeler cihazdan çıkmaz), çevrimdışı çalışabilme ve maliyet (soru başına ücret yoktur). Ayrıca proje, öğrencilere RAG sistemlerinin iç yapısını öğretmeyi amaçlar.
+
+Soru: Belgeler neden parçalara bölünüyor?
+Cevap: Dil modellerinin tek seferde okuyabileceği metin sınırlıdır ve arama, küçük parçalarla daha isabetli çalışır. Belgeler genellikle birkaç paragraflık parçalara (chunk) bölünür ve arama bu parçalar üzerinde yapılır.

@@ -1,0 +1,11 @@
+KULLANILAN TEKNOLOJİLER
+
+Foundry Local: Microsoft'un uçtan uca yerel yapay zeka çözümüdür. Dil modellerini tamamen kullanıcının cihazında çalıştıran hafif bir çalışma ortamı ve SDK sağlar. Bulut hesabı veya GPU zorunluluğu yoktur; modelleri otomatik indirir ve CPU, GPU veya NPU hızlandırmasıyla çalıştırır. Windows, macOS ve Linux desteklenir.
+
+RAG (Retrieval-Augmented Generation): Bir yapay zeka tasarım desenidir. Önce belge kümesinden ilgili bilgi bulunur (retrieve), bulunan bilgi modelin girdisine bağlam olarak eklenir (augment), ardından model cevabı üretir (generate). Cevaplar kullanıcının kendi verisine dayandığı için uydurma azalır.
+
+Embedding ve vektör arama: Metinler, anlamlarını temsil eden sayı dizilerine (vektörlere) çevrilir. Anlamca benzer metinlerin vektörleri birbirine yakındır. Benzerlik, kosinüs benzerliği (cosine similarity) ile ölçülür. Projede embedding modeli olarak qwen3-embedding-0.6b kullanılır.
+
+SQLite: Sunucusuz, tek dosyalık, dünyanın en yaygın kullanılan veritabanı motorudur. Ayrı kurulum gerektirmez ve Python içinde hazır gelir. Projede belge parçaları ve embedding vektörleri SQLite veritabanında saklanır.
+
+Prompt engineering: Modele verilen talimatların tasarımıdır. System mesajı modelin sabit kurallarını belirler; user mesajı kullanıcının sorusudur. Projede modele, cevabını yalnızca verilen bağlamdan çıkarması ve bağlamda bilgi yoksa bilmediğini söylemesi talimatı verilir.

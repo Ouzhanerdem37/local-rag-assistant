@@ -1,0 +1,9 @@
+RAPOR VE FİNAL SUNUMU
+
+Proje raporu: Her ekip kısa bir proje raporu veya README yazar. Raporda projenin amacı, sistemin nasıl çalıştığı, uygulamanın nasıl kurulup çalıştırılacağı, tasarım kararları ve bilinen sınırlamalar yer almalıdır. Takip edilen Microsoft Learn eğitimleri ve kullanılan kaynaklar raporda referans olarak belirtilmelidir.
+
+Kod temizliği: Teslimden önce hata ayıklama satırları (debug print) kaldırılmalı, önemli bölümlere açıklayıcı yorumlar eklenmeli ve kod stili tutarlı hale getirilmelidir. Versiyon kontrolü (Git) kullanımı iyi uygulama olarak önerilir.
+
+Final sunumu: Her ekip program sonunda kısa bir demo ve sunum yapar. Sunumda şunlar yer almalıdır: problemin tanımı ve botun hangi ihtiyacı karşıladığı; sistemin ana bileşenleri ve RAG'in nasıl kullanıldığı; canlı demo; ve öğrenilen dersler.
+
+Canlı demoda bot birkaç örnek soruyu cevaplamalıdır. Botun kaynak gösterdiği bir örnek ve cevabın belgelerde bulunmadığı bir soruda botun bilmediğini söylediği bir örnek özellikle gösterilmelidir. Öğrenilen dersler bölümünde ekibin aştığı bir veya iki zorluk anlatılmalıdır.

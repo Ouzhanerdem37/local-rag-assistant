@@ -1,0 +1,13 @@
+TESLİMLER VE KİLOMETRE TAŞLARI
+
+1. hafta sonunda: Foundry Local tüm öğrencilerin makinelerinde kurulu ve çalışır durumda olmalıdır. Temel bir proje klasörü ve main.py dosyası oluşturulmuş, yerel modelden basit bir çıktı alınmış olmalıdır.
+
+2. hafta sonunda: Öğrenciler RAG, Foundry Local, embedding ve SQLite konularında çalışma bilgisine sahip olmalıdır. Test amaçlı bir SQLite veritabanı oluşturulmuş ve embedding'lerle kosinüs benzerliği hesaplanmış olmalıdır.
+
+3. hafta sonunda: Belge parçaları ve embedding'lerle doldurulmuş bir SQLite veritabanı ile, verilen bir soru için en alakalı belge parçalarını bulan çalışan bir arama fonksiyonu (get_top_chunks) hazır olmalıdır.
+
+4. hafta sonunda: Kullanıcının sorusunu alan, ilgili belgeleri bulan ve yerel dil modeliyle cevap üreten, uçtan uca çalışan bir soru-cevap uygulaması tamamlanmış olmalıdır. Uygulamanın çekirdek işlevselliği bu noktada bitmiş sayılır.
+
+5. haftanın ortasında: Test sonuçları belgelenmiş olmalıdır. Denenen sorular ve cevapların doğru olup olmadığı listelenir; eksikler belirlenir ve son düzeltmeler planlanır.
+
+Program sonunda: Her ekip, proje raporu veya README belgesini tamamlamış ve final sunumunu prova etmiş olmalıdır. Program, çalışan botların sunulduğu demo günü ile kapanır.

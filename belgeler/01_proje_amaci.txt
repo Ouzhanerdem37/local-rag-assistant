@@ -1,0 +1,7 @@
+PROJE AMACI
+
+Yaz okulu programının hedefi, bilgisayar mühendisliği öğrencilerinin bir aylık tam zamanlı bir program içinde, Microsoft Foundry Local kullanarak yerel bir soru-cevap asistanı geliştirmesidir. Proje, RAG (Retrieval-Augmented Generation) desenini kullanır.
+
+Final projesi, internet bağlantısı olmadan tamamen öğrencinin bilgisayarında çalışan bir sohbet botudur. Bot, küçük bir belge koleksiyonu (ders notları, kılavuzlar, SSS belgeleri gibi) hakkında sorulan soruları, ilgili bilgiyi yerel olarak bulup dil modeline aktararak cevaplar.
+
+Programın sonunda her öğrenci ekibi, çalışan bir offline soru-cevap botuna sahip olur. Botun cevapları belgelere dayandığı için uydurma (hallucination) azalır ve cevaplar kaynak gösterilebilir hale gelir.
