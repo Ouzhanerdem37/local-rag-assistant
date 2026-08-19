@@ -118,3 +118,9 @@ local-rag-assistant/
 - [Building Your First Local RAG Application with Foundry Local (Tech Community)](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/building-your-first-local-rag-application-with-foundry-local/4501968)
 - [SQLite](https://sqlite.org/index.html)
 - [Prompt engineering techniques (Microsoft Learn)](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering)
+ ### Web arayüzü (önerilen)
+
+    streamlit run app.py
+    
+    Tarayıcıda `localhost:8501` açılır. Terminal arayüzü için: `python main.py`
+    <img width="1886" height="851" alt="image" src="https://github.com/user-attachments/assets/ea95e3eb-35e5-4261-a15e-5c59af4cae17" />
