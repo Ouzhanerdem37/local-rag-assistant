@@ -8,8 +8,8 @@ Microsoft Foundry Local ile tamamen offline calisan, belge tabanli soru-cevap as
 - [x] Kod icinden model baglantisi (SDK)
 - [x] Embedding ve vektor arama
 - [x] SQLite veri katmani
-- [ ] RAG pipeline
-- [ ] Arayuz
+- [x] RAG pipeline
+- [x] Arayuz
 
 ## Kurulum
 (Proje ilerledikce doldurulacak)

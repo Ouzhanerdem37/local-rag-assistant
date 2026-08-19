@@ -1,16 +1,17 @@
 from foundry_local_sdk import Configuration, FoundryLocalManager
+from foundry_local_sdk.openai import ChatClientSettings
 from ara import get_top_chunks
 
 CHAT_MODEL = "qwen3-4b"
 EMBED_MODEL = "qwen3-embedding-0.6b"
 
 KURALLAR = (
-    "Sen bir soru-cevap asistanisin. "
-    "SADECE sana BAGLAM olarak verilen bilgiyi kullanarak cevap ver. "
-    "Cevap baglamda yoksa SADECE su cumleyi yaz: 'Bu bilgi elimde yok.' "
-    "Cevabin sonunda yararlandigin kaynak dosyanin adini koseli parantezle belirt. "
-    "Soruyla ayni dilde, kisa ve net cevap ver."
     "/no_think Sen bir soru-cevap asistanisin. "
+    "SADECE sana BAGLAM olarak verilen bilgiyi kullan. "
+    "Sayilari, tarihleri ve sureleri baglamdan birebir aktar; asla cevirme veya tahmin etme. "
+    "Eger cevap baglamda VARSA: once cevabi tam cumle olarak yaz, en sona kaynak dosya adini koseli parantezle ekle. Ornek: 'Projede SQLite kullanilir. [03_teknolojiler.txt]' "
+    "Eger cevap baglamda YOKSA: kaynak gosterme ve SADECE sunu yaz: Bu bilgi elimde yok. "
+    "Soruyla ayni dilde, kisa ve net cevap ver."
 )
 
 def modelleri_hazirla():
@@ -26,7 +27,7 @@ def modelleri_hazirla():
     for varyant in embed_model.variants:
         if "cpu" in varyant.id:
             embed_model.select_variant(varyant)
-    embed_model.download()        
+    embed_model.download()
     embed_model.load()
 
     chat_model = manager.catalog.get_model(CHAT_MODEL)
@@ -35,7 +36,9 @@ def modelleri_hazirla():
             chat_model.select_variant(varyant)
     chat_model.load()
 
-    return embed_model.get_embedding_client(), chat_model.get_chat_client()
+    chat_client = chat_model.get_chat_client()
+    
+    return embed_model.get_embedding_client(), chat_client
 
 def cevapla(embed_client, chat_client, soru):
     parcalar = get_top_chunks(embed_client, soru, k=3)

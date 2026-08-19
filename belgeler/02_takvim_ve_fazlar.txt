@@ -1,6 +1,6 @@
 PROGRAM TAKVİMİ VE FAZLAR
 
-Program bir aya yayılır ve üç faza bölünmüştür. Takvim esnektir; konular gerektiğinde haftalar arasında kaydırılabilir.
+Program 4 hafta (yaklaşık bir ay) sürer ve üç faza bölünmüştür.
 
 Faz 1, temel öğrenme fazıdır ve 1. ile 2. haftaları kapsar. Bu fazda RAG kavramları, Foundry Local, embedding, vektör arama, SQLite ve prompt engineering temelleri öğrenilir. Faz 1 sonunda öğrencilerin Foundry Local kurulumu tamamlanmış, örnek bir SQLite veritabanı oluşturulmuş ve küçük test programları çalıştırılmış olmalıdır.
 
