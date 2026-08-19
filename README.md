@@ -123,4 +123,5 @@ local-rag-assistant/
     streamlit run app.py
     
     Tarayıcıda `localhost:8501` açılır. Terminal arayüzü için: `python main.py`
-    <img width="1886" height="851" alt="image" src="https://github.com/user-attachments/assets/ea95e3eb-35e5-4261-a15e-5c59af4cae17" />
+   
+ <img width="1886" height="851" alt="image" src="https://github.com/user-attachments/assets/ea95e3eb-35e5-4261-a15e-5c59af4cae17" />
